@@ -1,3 +1,7 @@
+.services {
+  position: relative;
+}
+
 .services > .container {
   padding-top: 40px;
 }
@@ -29,13 +33,12 @@
   position: relative;
   display: block;
   margin-top: 20px;
-  padding: 7px 10px 30px 10px;
+  padding: 7px 10px 35px 10px;
   font-family: var(--font-main);
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: var(--color-dark);
-  overflow: hidden;
 
   &::before {
     content: "";
@@ -51,6 +54,10 @@
 }
 
 .services__wrapper {
+  margin-top: -182px;
+  // position: absolute;
+  padding-left: 100% * 17 / 374;
+  // bottom: 110px;
   overflow-x: scroll;
 }
 
@@ -58,7 +65,24 @@
   display: flex;
   margin: 0;
   padding: 0;
-  width: 200%;
+  // width: 1170px;
   list-style: none;
-  overflow: auto;
+  // overflow-x: scroll;
+}
+
+.services__item:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+.services__link {
+  display: block;
+  padding: 27px;
+  width: 270px;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-dark);
+  text-align: center;
+  background-color: var(--color-mid);
 }
