@@ -4,6 +4,7 @@
   grid-auto-rows: auto;
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
   list-style: none;
 }
 
@@ -71,6 +72,10 @@
 }
 
 @media (min-width: $width-notebook) {
+  .features__list {
+    padding-bottom: 0;
+  }
+
   .features__item {
     padding: 35px 0 31px 0;
     width: 270px;

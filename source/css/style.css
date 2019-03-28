@@ -470,6 +470,7 @@ a {
   grid-auto-rows: auto;
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
   list-style: none; }
 
 .features__item {
@@ -521,6 +522,8 @@ a {
     text-align: center; } }
 
 @media (min-width: 1260px) {
+  .features__list {
+    padding-bottom: 0; }
   .features__item {
     padding: 35px 0 31px 0;
     width: 270px;
@@ -536,9 +539,6 @@ a {
     padding-left: calc(38px + 32px); }
   .features__item--4 {
     padding-left: calc(44px + 26px); } }
-
-.about {
-  margin-top: 30px; }
 
 .about__wrapper {
   position: relative;
