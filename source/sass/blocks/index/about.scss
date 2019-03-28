@@ -95,7 +95,16 @@
 
 @media (min-width: $width-notebook) {
   .about__wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 480px auto;
+    grid-template-rows: repeat(3, auto);
+    padding-right: 0;
+  }
+
+  .about__frame {
+    grid-row: 1 / 4;
+    width: 480px;
+    height: 455px;
   }
 
   .about__content {
@@ -113,7 +122,10 @@
   }
 
   .about__btn {
+    grid-row: 2 / 3;
+    margin: 0;
     margin-top: 51px;
-    margin-right: calc(-96px - 40px);
+    margin-left: auto;
+    height: 60px;
   }
 }
