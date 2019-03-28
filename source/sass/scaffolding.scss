@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 100% * 17 / 374;
+}
+
+.btn {
+  display: block;
+  padding: 21px;
+  width: 250px;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-light);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--color-dark);
+  border: none;
+}
+
+.marketing {
+  display: block;
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--color-dark);
+}
+
+.heading {
+  font-family: var(--font-headings);
+  font-size: 36px;
+  font-weight: normal;
+  line-height: normal;
+  color: var(--color-dark);
+}
+
+.descriptor {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--color-dark);
+}
+
+@media (min-width: $width-notebook) {
+  .container {
+    padding: 0 55px;
+  }
+}

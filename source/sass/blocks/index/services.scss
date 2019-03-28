@@ -1,0 +1,64 @@
+.services > .container {
+  padding-top: 40px;
+}
+
+.services__heading {
+  margin: 0;
+}
+
+.services__marketing {
+  margin-bottom: 15px;
+}
+
+.services__descriptor {
+  margin-top: 10px;
+}
+
+.services__frame {
+  margin-top: 30px;
+  height: 310px;
+}
+
+.services__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services__calc {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  padding: 7px 10px 30px 10px;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--color-dark);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 60px;
+    background-image: url("../img/index/decor-mid.svg");
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.services__wrapper {
+  overflow-x: scroll;
+}
+
+.services__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 200%;
+  list-style: none;
+  overflow: auto;
+}

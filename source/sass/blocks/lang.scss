@@ -1,0 +1,23 @@
+@media (min-width: $width-tablet) {
+  .lang {
+    display: flex;
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lang__item:not(:first-of-type) {
+    margin-left: 15px;
+  }
+
+  .lang__link {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    color: var(--color-dark);
+    letter-spacing: 1.05px;
+    text-transform: lowercase;
+  }
+}

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/ubuntulight.woff2") format("woff2"),
+    url("../fonts/ubuntulight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/ubuntu.woff2") format("woff2"),
+    url("../fonts/ubuntu.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/ubuntumedium.woff2") format("woff2"),
+    url("../fonts/ubuntumedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/ubuntubold.woff2") format("woff2"),
+    url("../fonts/ubuntubold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/NotoSerif-Regular.woff2") format("woff2"),
+    url("../fonts/NotoSerif-Regular.woff") format("woff");
+}

@@ -1,0 +1,23 @@
+@media (min-width: $width-tablet) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+  }
+
+  .nav__item:not(:first-of-type) {
+    margin-left: 40px;
+  }
+
+  .nav__link {
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    color: var(--color-dark);
+    letter-spacing: 1.05px;
+  }
+}
