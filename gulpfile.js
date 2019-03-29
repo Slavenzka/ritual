@@ -15,8 +15,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
-var ttf2woff = require('gulp-ttf2woff');
-var ttf2woff2 = require('gulp-ttf2woff2');
 var jsMinify = require('gulp-minify');
 
 gulp.task("style", function() {
