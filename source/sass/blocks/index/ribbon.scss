@@ -1,0 +1,70 @@
+.ribbon > .container {
+  padding-top: 20px;
+}
+
+.ribbon__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 245px);
+  grid-column-gap: 30px;
+  grid-row-gap: 45px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 43px 20px 33px 75px;
+  list-style: none;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  letter-spacing: 1.05px;
+}
+
+.ribbon__item {
+  position: relative;
+  width: 245px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+  }
+}
+
+.ribbon__item--1 {
+  &::before {
+    top: -13px;
+    left: -55px;
+    width: 40px;
+    height: 60px;
+    background-image: url("../img/index/coffin.svg");
+  }
+}
+
+.ribbon__item--2 {
+  &::before {
+    top: -6px;
+    left: -55px;
+    width: 40px;
+    height: 60px;
+    background-image: url("../img/index/shovel.svg");
+  }
+}
+
+.ribbon__item--3 {
+  &::before {
+    top: -3px;
+    left: -55px;
+    width: 26px;
+    height: 60px;
+    background-image: url("../img/index/candle.svg");
+  }
+}
+
+@media (min-width: $width-notebook) {
+  .ribbon__list {
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-between;
+    padding: 60px 30px 60px 91px;
+  }
+}
