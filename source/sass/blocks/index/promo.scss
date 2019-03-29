@@ -4,52 +4,12 @@
   list-style: none;
 }
 
-.promo .slick-arrow {
-  position: absolute;
-  bottom: 30px;
-  padding: 0;
-  width: 75px;
-  height: 20px;
-  font-size: 0;
-  background-color: transparent;
-  border: none;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 65px;
-    height: 1px;
-    background-color: var(--color-mid);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 5px);
-    left: 0;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 10px solid var(--color-mid);
-    border-bottom: 5px solid transparent;
-  }
-}
-
 .promo .slick-prev {
   left: 20px;
 }
 
 .promo .slick-next {
   left: 135px;
-  transform: rotate(180deg);
-
-  &::before {
-    content: "";
-    top: calc(50% - 1px);
-  }
 }
 
 @media (min-width: $width-notebook) {
@@ -98,31 +58,8 @@
   }
 
   .promo .custom-paging {
-    position: absolute;
+    --paging-color: var(--color-light);
     bottom: 31px;
     left: 98px;
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-main);
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 16px;
-    color: var(--color-light);
-    letter-spacing: 1.05px;
-    list-style: none;
-  }
-
-  .promo .custom-paging li:not(.slick-active) {
-    display: none;
-  }
-
-  .promo .dot-active {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-  }
-
-  .promo .dot-separator {
-    margin: 0 10px;
   }
 }
