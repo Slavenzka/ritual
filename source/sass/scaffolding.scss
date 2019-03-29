@@ -72,6 +72,78 @@ a {
   color: var(--color-dark);
 }
 
+.slick-arrow {
+  --color-arrow: var(--color-mid);
+  position: absolute;
+  bottom: 30px;
+  padding: 0;
+  width: 75px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 65px;
+    height: 1px;
+    background-color: var(--color-arrow);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid var(--color-arrow);
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.slick-next {
+  transform: rotate(180deg);
+
+  &::before {
+    content: "";
+    top: calc(50% - 1px);
+  }
+}
+
+.custom-paging {
+  --paging-color: var(--color-ligt);
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--paging-color);
+  letter-spacing: 1.05px;
+  list-style: none;
+}
+
+.custom-paging li:not(.slick-active) {
+  display: none;
+}
+
+.dot-active {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.dot-separator {
+  margin: 0 10px;
+}
+
 @media (min-width: $width-notebook) {
   .container {
     padding: 0 55px;
