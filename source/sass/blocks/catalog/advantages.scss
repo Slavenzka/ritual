@@ -1,0 +1,100 @@
+.advantages {
+  margin-top: 50px;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 340px);
+  grid-row-gap: 36px;
+  margin: 0;
+  padding: 46px 0;
+  background-color: var(--color-mid);
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  padding-right: 25px;
+  padding-left: 116px;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--color-dark);
+  letter-spacing: 1.05px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__item--price {
+  &::before {
+    top: -6px;
+    left: 30px;
+    width: 44px;
+    height: 44px;
+    background-image: url("../img/catalog/piggy-bank.svg");
+  }
+}
+
+.advantages__item--quality {
+  &::before {
+    top: -6px;
+    left: 37px;
+    width: 31px;
+    height: 44px;
+    background-image: url("../img/catalog/ribbon.svg");
+  }
+}
+
+.advantages__item--range {
+  &::before {
+    top: -5px;
+    left: 30px;
+    width: 44px;
+    height: 42px;
+    background-image: url("../img/catalog/shopping-cart.svg");
+  }
+}
+
+.advantages__item--time {
+  &::before {
+    top: -6px;
+    left: 34px;
+    width: 36px;
+    height: 44px;
+    background-image: url("../img/catalog/stopwatch.svg");
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .advantages__list {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: $width-notebook) {
+  .advantages {
+    margin-top: 110px;
+  }
+
+  .advantages__list {
+    grid-template-columns: repeat(auto-fit, 290px);
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    padding-right: 0;
+    padding-left: 116px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .advantages__list {
+    justify-content: space-evenly;
+  }
+}

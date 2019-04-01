@@ -73,9 +73,9 @@
         <path d="M29.2448672,32.578125 L2.72192031,32.578125 L2.84217094e-14,35.3292847 L2.84217094e-14,40 L31.9667874,40 L31.9667874,35.3292847 L29.2448672,32.578125 Z M30.8073671,38.828125 L1.15942029,38.828125 L1.15942029,35.8148194 L3.20229472,33.75 L28.7647947,33.75 L30.8073671,35.8148194 L30.8073671,38.828125 Z"></path>
         <path d="M17.9269324,14.2089844 L17.9269324,21.0617066 L19.0863527,21.0617066 L19.0863527,18.2211304 L21.0969203,18.2211304 L21.8964372,17.4130249 L21.8964372,15.0170898 L21.0969203,14.2089844 L17.9269324,14.2089844 Z M20.7370169,16.9277954 L20.6168478,17.0492554 L19.0863527,17.0492554 L19.0863527,15.3805542 L20.6168478,15.3805542 L20.7370169,15.5023194 L20.7370169,16.9277954 Z"></path>
         <path d="M11.2297705,18.2211304 L12.4972826,18.2211304 L12.8807367,18.6087036 L12.8807367,21.0617066 L14.040157,21.0617066 L14.040157,18.1234741 L13.5591787,17.6373291 L14.040157,17.1511841 L14.040157,14.942627 L13.3140097,14.2086792 L10.0703502,14.2086792 L10.0703502,21.0617066 L11.2297705,21.0617066 L11.2297705,18.2211304 Z M11.2297705,15.3808594 L12.8336352,15.3808594 L12.8807367,15.4281616 L12.8807367,16.6656494 L12.5012077,17.0492554 L11.2297705,17.0492554 L11.2297705,15.3808594 Z"></path>
-        <polygon id="Shape" points="15.4036836 14.2089844 16.5631038 14.2089844 16.5631038 21.0617066 15.4036836 21.0617066"></polygon>
-        <polygon id="Shape" points="9.656401 23.1976319 22.3106884 23.1976319 22.3106884 24.3695069 9.656401 24.3695069"></polygon>
-        <polygon id="Shape" points="12.53593 25.7421875 19.4311594 25.7421875 19.4311594 26.9140625 12.53593 26.9140625"></polygon>
+        <polygon points="15.4036836 14.2089844 16.5631038 14.2089844 16.5631038 21.0617066 15.4036836 21.0617066"></polygon>
+        <polygon points="9.656401 23.1976319 22.3106884 23.1976319 22.3106884 24.3695069 9.656401 24.3695069"></polygon>
+        <polygon points="12.53593 25.7421875 19.4311594 25.7421875 19.4311594 26.9140625 12.53593 26.9140625"></polygon>
         <path d="M30.0344203,37.4609375 L28.875,37.4609375 L28.875,36.6235352 L27.9643719,35.703125 L21.8689614,35.703125 L21.8689614,34.53125 L28.4444444,34.53125 L30.0344203,36.1383056 L30.0344203,37.4609375 Z M21.0960145,35.703125 L19.9365942,35.703125 L19.9365942,34.53125 L21.0960145,34.53125 L21.0960145,35.703125 Z M19.1636474,35.703125 L18.0042271,35.703125 L18.0042271,34.53125 L19.1636474,34.53125 L19.1636474,35.703125 Z"></path>
         <path d="M22.299215,11.461792 C22.299215,9.2565918 21.1923309,7.23541258 19.3384662,6.05560305 L19.9565217,5.06408688 C22.1491546,6.45965578 23.4583334,8.85131836 23.4586353,11.461792 L22.299215,11.461792 Z M18.7198068,5.70892336 C18.40157,5.55358891 18.0685387,5.42480469 17.7294686,5.32623289 L18.0504227,4.2001343 C18.4519927,4.31701656 18.8469203,4.46960453 19.2237319,4.65362547 L18.7198068,5.70892336 Z M17.040459,5.16754148 C16.6935386,5.10833742 16.3378623,5.078125 15.9833937,5.078125 L15.9833937,3.90625 C16.4027778,3.90625 16.8233696,3.94165039 17.2336957,4.01184078 L17.040459,5.16754148 Z"></path>
       </g>
@@ -280,7 +280,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link">
+              <a href="index.html" class="nav__link">
                 Главная
               </a>
             </li>
@@ -356,7 +356,7 @@
               </ul>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--submenu">
+              <a class="nav__link">
                 Товары
               </a>
               <ul class="nav__submenu submenu">
@@ -427,278 +427,174 @@
 
   <main>
     <h1 class="visually-hidden">
-      Главная страница ритуального сервиса Memory
+      Каталог продукции, предлагаемой Memory
     </h1>
-    <link rel="stylesheet" href="plugins/slick/slick.css">
-    <section class="promo">
+    <section class="catalog">
       <div class="container">
-        <h2 class="visually-hidden">
-          Описание предлагаемых услуг и контактная информация
+        <h2 class="catalog__heading">
+          Гробы
         </h2>
-        <div class="promo__wrapper">
-          <ul class="promo__list">
-            <li class="promo__item banner banner--1">
-              <h3 class="banner__heading">
-                Ритуальный сервис1
-                <span class="banner__feature">
-                  Надежный и современный1
-                </span>
+        <p class="catalog__descriptor">
+          Наш магазин имеет в&nbsp;продаже гробы, обитые велюром, креп&nbsp;&mdash; сатином, драпированным велюром. Все тканевые гробы длиной от&nbsp;2,0&nbsp;м до&nbsp;2,2м. Цветовые гаммы&nbsp;&mdash; черные, бордовые, красные, синее, голубые, желтые.
+        </p>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--1">
+            <a class="catalog__link">
+              <img src="img/catalog/catalog__item--1.jpg" alt="Фотография товара от Memory" class="catalog__img">
+              <h3 class="catalog__name">
+                Гроб комбинированный Золото
               </h3>
-              <p class="banner__descriptor">
-                Организация похорон. Качественное и быстрое решение любых ритуальных вопросов
-              </p>
-              <p class="banner__descriptor">
-                Закажите бесплатную консультацию прямо сейчас:
-              </p>
-              <a class="btn banner__btn callback-trigger">
-                Заказать звонок
-              </a>
-            </li>
-            <li class="promo__item banner banner--2">
-              <h3 class="banner__heading">
-                Ритуальный сервис2
-                <span class="banner__feature">
-                  Надежный и современный2
+              <p class="catalog__price">от
+                <span class="catalog__value">
+                  6000
                 </span>
-              </h3>
-              <p class="banner__descriptor">
-                Организация похорон. Качественное и быстрое решение любых ритуальных вопросов
+                грн
               </p>
-              <p class="banner__descriptor">
-                Закажите бесплатную консультацию прямо сейчас:
-              </p>
-              <a class="btn banner__btn callback-trigger">
-                Заказать звонок
-              </a>
-            </li>
-          </ul>
-          <address class="promo__contacts contacts">
-            <ul class="contacts__list">
-              <li class="contacts__item contacts__item--city">
-                Киев и Киевская обл.
-                <svg class="contacts__icon" width="25" height="25" viewbox="0 0 25 25">
-                  <use xlink:href="#placeholder-small"></use>
-                </svg>
-              </li>
-              <li class="contacts__item contacts__item--mail">
-                <a href="mailto:ritual.servike@mail.ua" class="contacts__mail">
-                  ritual.servike@mail.ua
-                </a>
-                <svg class="contacts__icon" width="25" height="25" viewbox="0 0 25 25">
-                  <use xlink:href="#mail-small"></use>
-                </svg>
-              </li>
-              <li class="contacts__item contacts__item--phones">
-                <ul class="contacts__phones">
-                  <li class="contacts__phone">
-                    +38 044 00 33 222
-                  </li>
-                  <li class="contacts__phone">
-                    +38 044 00 33 222
-                  </li>
-                  <li class="contacts__phone">
-                    +38 044 00 33 222
-                  </li>
-                  <li class="contacts__phone">
-                    +38 044 00 33 222
-                  </li>
-                </ul>
-                <svg class="contacts__icon" width="25" height="25" viewbox="0 0 25 25">
-                  <use xlink:href="#phone-small"></use>
-                </svg>
-              </li>
-            </ul>
-            <a href="#" class="contacts__more">
-              Больше контактов
-              <svg class="contacts__arrow" width="21" height="10" viewBox="0 0 29 13">
-                <use xlink:href="#arrow-short"></use>
-              </svg>
             </a>
-          </address>
-        </div>
-      </div>
-    </section>
-    <section class="features">
-      <div class="container">
-        <h2 class="visually-hidden">
-          Наши отличительные особенности
-        </h2>
-        <ul class="features__list">
-          <li class="features__item features__item--1">
-            Бесплатный выезд и консультирование
           </li>
-          <li class="features__item features__item--2">
-            Работаем круглосуточно без выходных
+          <li class="catalog__item catalog__item--2">
+            <a class="catalog__link">
+              <img src="img/catalog/catalog__item--2.jpg" alt="Фотография товара от Memory" class="catalog__img">
+              <h3 class="catalog__name">
+                Гроб белый сосна Обелиск
+              </h3>
+              <p class="catalog__price">
+                от
+                <span class="catalog__value">
+                  4000
+                </span>
+                грн
+              </p>
+            </a>
           </li>
-          <li class="features__item features__item--3">
-            Профессионалы своего дела
+          <li class="catalog__item catalog__item--3">
+            <a class="catalog__link">
+              <img src="img/catalog/catalog__item--3.jpg" alt="Фотография товара от Memory" class="catalog__img">
+              <h3 class="catalog__name">
+                Гроб четырехгранный Рюрик светлый Золото
+              </h3>
+              <p class="catalog__price">
+                от
+                <span class="catalog__value">
+                  6000
+                </span>
+                грн
+              </p>
+            </a>
           </li>
-          <li class="features__item features__item--4">
-            Адекватные цены и высокое качество
+          <li class="catalog__item catalog__item--4">
+            <a class="catalog__link">
+              <img src="img/catalog/catalog__item--4.jpg" alt="Фотография товара от Memory" class="catalog__img">
+              <h3 class="catalog__name">
+                Гроб комбинированный Золото
+              </h3>
+              <p class="catalog__price">
+                от
+                <span class="catalog__value">
+                  6000
+                </span>
+                грн
+              </p>
+            </a>
+          </li>
+          <li class="catalog__item catalog__item--5">
+            <a class="catalog__link">
+              <img src="img/catalog/catalog__item--7.jpg" alt="Фотография товара от Memory" class="catalog__img">
+              <h3 class="catalog__name">
+                Гроб шестигранный темная Ольха
+              </h3>
+              <p class="catalog__price">
+                от
+                <span class="catalog__value">
+                  6000
+                </span>
+                грн
+              </p>
+            </a>
+          </li>
+          <li class="catalog__item catalog__item--6">
+            <a class="catalog__link">
+              <img src="img/catalog/catalog__item--7.jpg" alt="Фотография товара от Memory" class="catalog__img">
+              <h3 class="catalog__name">
+                Гроб шестигранный темная Ольха
+              </h3>
+              <p class="catalog__price">
+                от
+                <span class="catalog__value">
+                  6000
+                </span>
+                грн
+              </p>
+            </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="about">
+    <section class="advantages">
       <div class="container">
-        <div class="about__wrapper">
-          <div class="about__frame">
-            <img src="img/index/about__img.jpg" alt="Фотография памятника" class="about__img">
-          </div>
-          <div class="about__content">
-            <h2 class="about__heading">
-              О нас
-            </h2>
-            <p class="about__slogan">
-              Memory - это
-            </p>
-            <p class="descriptor about__descriptor">
-              Memory – ритуальный сервис, который обеспечивает полный спектр похоронных услуг в г. Киев и Киевской области.
-            </p>
-            <p class="descriptor about__descriptor">
-              Мы гарантируем квалифицированную помощь профессионалов, которые обеспечат все организационные вопросы и проведение похорон. Вы сможете спокойно попрощаться с близким человеком.
-              <a href="#" class="about__more">
-                Далее
-              </a>
-            </p>
-          </div>
-          <a class="btn about__btn callback-trigger">
-            Заказать звонок
-          </a>
-        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--price">
+            Доступные цены для каждого
+          </li>
+          <li class="advantages__item advantages__item--quality">
+            Высокое качество и лучший материал
+          </li>
+          <li class="advantages__item advantages__item--range">
+            Широкий асортимент всех ритуальных товаров
+          </li>
+          <li class="advantages__item advantages__item--time">
+            Изготовление в оговоренные сроки
+          </li>
+        </ul>
       </div>
     </section>
-    <section class="services">
+    <section class="more">
       <div class="container">
-        <h2 class="heading services__heading">
-          <span class="marketing services__marketing">
-            Широкий спектр
-          </span>
-          Ритуальных услуг
+        <h2 class="more__heading">
+          Вас может заинтересовать
         </h2>
-        <p class="descriptor services__descriptor">
-          Оказываем полный комплекс ритуальных услуг: перевозку умершего, покупку места на кладбище, сбор документов о смерти, наши специалисты помогут выбрать гроб и акксессуары, агенты помогут с похоронами, кремацией или консультацией по любым вопросам.
-        </p>
-        <div class="services__frame">
-          <img class="services__img" src="img/index/services__img.jpg" alt="Иллюстрация к предлагаемым услугам">
-        </div>
-        <a href="#" class="services__calc">
-          Рассчитать стоимость похорон
-        </a>
-      </div>
-      <div class="services__wrapper">
-        <ul class="services__list">
-          <li class="services__item services__item--1">
-            <a href="#" class="services__link">
+        <ul class="nav__submenu submenu more__list">
+          <li class="submenu__item submenu__item--funeral more__item more__item--funeral">
+            <a href="#" class="submenu__link more__link">
+              <svg class="submenu__icon more__icon" width="32" height="40" viewBox="0 0 32 40">
+                <use xlink:href="#funeral"></use>
+              </svg>
               Организация похорон
             </a>
           </li>
-          <li class="services__item services__item--2">
-            <a href="#" class="services__link">
-              Ритуальный транспорт
+          <li class="submenu__item submenu__item--flowers more__item more__item--flowers">
+            <a href="#" class="submenu__link more__link">
+              <svg class="submenu__icon more__icon" width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="#flowers"></use>
+              </svg>
+              Живые цветы
             </a>
           </li>
-          <li class="services__item services__item--3">
-            <a href="#" class="services__link">
-              Кремация
+          <li class="submenu__item submenu__item--tributes more__item more__item--tributes">
+            <a href="#" class="submenu__link more__link">
+              <svg class="submenu__icon more__icon" width="40" height="40" viewBox="0 0 40 40">
+                <use xlink:href="#tributes"></use>
+              </svg>
+              Венки
             </a>
           </li>
-          <li class="services__item services__item--4">
-            <a href="#" class="services__link">
-              Юридические услуги
+          <li class="submenu__item submenu__item--crosses  more__item more__item--crosses">
+            <a href="#" class="submenu__link more__link">
+              <svg class="submenu__icon more__icon" width="33" height="40" viewBox="0 0 33 40">
+                <use xlink:href="#crosses"></use>
+              </svg>
+              Кресты
+            </a>
+          </li>
+          <li class="submenu__item submenu__item--cases more__item more__item--cases">
+            <a href="#" class="submenu__link more__link">
+              <svg class="submenu__icon more__icon" width="40" height="36" viewBox="0 0 40 36">
+                <use xlink:href="#cases"></use>
+              </svg>
+              Саркофаги
             </a>
           </li>
         </ul>
-      </div>
-    </section>
-    <section class="ribbon">
-      <div class="container">
-        <h2 class="visually-hidden">
-          Аргументы в пользу выбора наших услуг
-        </h2>
-        <ul class="ribbon__list">
-          <li class="ribbon__item ribbon__item--1">
-            Качественная продукция с сертификацией
-          </li>
-          <li class="ribbon__item ribbon__item--2">
-            Полный спектр услуг по организации похорон и погребению
-          </li>
-          <li class="ribbon__item ribbon__item--3">
-            Выполнение всех обязательств в указанный срок, без задержек и опозданий
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container">
-        <div class="products__wrapper">
-          <h2 class="heading products__heading">
-            <span class="marketing products__marketing">
-              Качественные
-            </span>
-            Товары
-          </h2>
-          <p class="descriptor products__descriptor">
-            Наш ритуальный сервис предлагает большой выбор товаров Зарубежного и Украинского производства. Мы гарантируем честные цены и качество всей представленной продукции.
-          </p>
-          <a href="#" class="products__all">
-            Все товары
-            <svg class="products__arrow" width="21" height="10" viewBox="0 0 29 13">
-              <use xlink:href="#arrow-short"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="products__slider">
-          <ul class="products__list">
-            <li class="products__item products__item--coffin">
-              <h3 class="products__name">
-                Гробы
-              </h3>
-              <img src="img/index/products__item--coffin.png" alt="Фотография предлагаемых товаров" class="products__img">
-            </li>
-            <li class="products__item products__item--flowers">
-              <h3 class="products__name">
-                Цветы
-              </h3>
-              <img src="img/index/products__item--flowers.png" alt="Фотография предлагаемых товаров" class="products__img">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="support">
-      <div class="container">
-        <h2 class="heading support__heading">
-          <span class="marketing support__marketing">
-            Поддержка
-          </span>
-          Всех клиентов
-        </h2>
-        <p class="descriptor support__descriptor">
-          Мы не работаем по шаблону, для нас важны все индивидуальные особенности и мы подбираем оптимальное решение, чтобы помочь Вам в трудную минуту.
-        </p>
-        <img src="img/index/support__img.jpg" alt="Фотография необычных клиентов" class="support__img">
-        <a class="btn support__btn callback-trigger">
-          Заказать звонок
-        </a>
-      </div>
-    </section>
-    <section class="question">
-      <div class="container">
-        <div class="question__wrapper">
-          <h2 class="heading products__heading">
-            <span class="marketing products__marketing">
-              Остались вопросы?
-            </span>
-            Напишите нам
-          </h2>
-          <p class="descriptor question__descriptor">
-            Мы с радостью ответим на все Ваши вопросы, как в усном, так и письменном формате
-          </p>
-          <a class="btn question__btn message-trigger">
-            Сообщение
-          </a>
-        </div>
       </div>
     </section>
   </main>
@@ -761,7 +657,6 @@
       </form>
     </div>
   </div>
-
   <div class="modal modal--message">
     <div class="modal__content">
       <img src="img/modal__img.jpg" alt="Фотография скульптуры" class="modal__img">
@@ -790,61 +685,7 @@
     </div>
   </div>
 
-
   <script src="js/menu.js"></script>
   <script src="js/modal.js"></script>
-  <script src="plugins/jquery-3.3.1.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script>
-    $('.promo__list').slick({
-      dots: true,
-      dotsClass: 'custom-paging',
-      customPaging: function (slider, i) {
-        var slideNumber   = (i + 1);
-        var totalSlides = slider.slideCount;
-        return '<span class="dot-active">' + slideNumber + '</span><span class="dot-separator">' + 'из' + '</span><span class="dot-total">' + slider.slideCount + '</span>';
-      },
-      arrows: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      fade: true,
-      responsive: [
-        {
-          breakpoint: 1259,
-          settings: {
-            dots: false,
-            arrows: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            fade: true
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            dots: false,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            fade: true
-          }
-        }
-      ]
-    });
-    $('.products__list').slick({
-      dots: true,
-      dotsClass: 'custom-paging',
-      customPaging: function (slider, i) {
-        var slideNumber   = (i + 1);
-        var totalSlides = slider.slideCount;
-        return '<span class="dot-active">' + slideNumber + '</span><span class="dot-separator">' + 'из' + '</span><span class="dot-total">' + slider.slideCount + '</span>';
-      },
-      arrows: true,
-      autoplay: false,
-      autoplaySpeed: 2000,
-      fade: true,
-      adaptiveHeight: true
-    });
-  </script>
 </body>
 </html>
