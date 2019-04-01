@@ -121,10 +121,29 @@
     margin-bottom: 40px;
   }
 
+  .about__more {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+  }
+
+  .about__more:hover {
+    opacity: 0.75;
+  }
+
   .about__btn {
     grid-row: 2 / 3;
     margin: 0;
     margin-left: auto;
     height: 60px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .about__content {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 800px;
+    min-height: 395px;
   }
 }

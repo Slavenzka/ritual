@@ -4,8 +4,10 @@ html {
 
 *,
 *::before,
-*::after {
+*::after,
+*:focus {
   box-sizing: inherit;
+  outline: none;
 }
 
 a {
@@ -42,6 +44,9 @@ a {
   text-transform: uppercase;
   background-color: var(--color-dark);
   border: none;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  cursor: pointer;
 }
 
 .marketing {
@@ -83,6 +88,9 @@ a {
   background-color: transparent;
   border: none;
   z-index: 2;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -105,6 +113,10 @@ a {
     border-right: 10px solid var(--color-arrow);
     border-bottom: 5px solid transparent;
   }
+}
+
+.slick-arrow:hover {
+  opacity: 0.5;
 }
 
 .slick-next {
@@ -147,5 +159,9 @@ a {
 @media (min-width: $width-notebook) {
   .container {
     padding: 0 55px;
+  }
+
+  .btn:hover {
+    background-color: var(--color-dark-opac);
   }
 }

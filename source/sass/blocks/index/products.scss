@@ -126,6 +126,10 @@
     padding-top: 110px;
   }
 
+  .products .slick-arrow {
+    bottom: 29px;
+  }
+
   .products .slick-prev {
     left: 15%;
   }
@@ -148,6 +152,26 @@
   .products__all {
     margin-top: 60px;
     width: 150px;
+
+    &::before {
+      transition-duration: 0.3s;
+      transition-property: opacity;
+    }
+  }
+
+  .products__all:hover {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  .products__arrow {
+    transition-duration: 0.3s;
+    transition-property: margin-left;
+  }
+
+  .products__all:hover .products__arrow {
+    margin-left: 20px;
   }
 
   .products__slider {
@@ -157,13 +181,20 @@
   }
 
   .products__item {
+    padding-bottom: 80px;
+
     &::before {
       content: "";
       max-width: 730px;
     }
   }
 
+  .products__name {
+    margin-top: 52px;
+  }
+
   .products__img {
+    margin-top: 70px;
     max-width: 1000px;
   }
 }

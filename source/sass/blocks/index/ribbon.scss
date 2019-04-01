@@ -22,7 +22,7 @@
 
 .ribbon__item {
   position: relative;
-  width: 245px;
+  width: 100%;
 
   &::before {
     content: "";
@@ -66,5 +66,13 @@
     grid-template-columns: repeat(3, 250px);
     justify-content: space-between;
     padding: 60px 30px 60px 91px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .ribbon__list {
+    justify-content: space-evenly;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
