@@ -115,9 +115,29 @@
     height: 520px;
   }
 
+  .services__link {
+    transition-duration: 0.3s;
+    transition-property: background-color;
+  }
+
+  .services__link:hover {
+    background-color: var(--color-mid-opac);
+  }
+
   .services__calc {
     margin-top: 200px;
     width: 270px;
+
+    &::before {
+      transition-duration: 0.3s;
+      transition-property: opacity;
+    }
+  }
+
+  .services__calc:hover {
+    &::before {
+      opacity: 0.5;
+    }
   }
 
   .services__wrapper {

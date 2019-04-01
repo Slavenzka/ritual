@@ -1,23 +1,131 @@
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.nav__link {
+  display: block;
+  padding-right: 30%;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+
+.nav__link--submenu {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 23px;
+    width: 16px;
+    height: 10px;
+    background-image: url("../img/arrow__mobile-menu.svg");
+    background-size: cover;
+    transform: rotate(0);
+    transition-duration: 0.3s;
+  }
+}
+
+.nav__link--opened {
+  &::before {
+    transform: rotate(-180deg);
+  }
+}
+
+.nav__link--opened + .nav__submenu {
+  display: block;
+}
+
+.nav__submenu {
+  display: none;
+}
+
 @media (min-width: $width-tablet) {
   .nav__list {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
     height: 100%;
-    list-style: none;
+  }
+
+  .nav__item {
+    font-size: 0;
   }
 
   .nav__item:not(:first-of-type) {
+    margin-top: 0;
     margin-left: 40px;
   }
 
   .nav__link {
+    position: static;
+    padding-right: 0;
     font-family: var(--font-main);
     font-size: 14px;
     font-weight: 300;
     line-height: 16px;
     color: var(--color-dark);
+    text-transform: none;
     letter-spacing: 1.05px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .nav__link:not([href]):not(.nav__link--submenu),
+  .nav__link--opened {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: var(--color-mid);
+    }
+  }
+
+  .nav__link--submenu {
+    cursor: pointer;
+  }
+
+  .nav__submenu {
+    display: grid;
+    transition-duration: 0.3s;
+  }
+
+  .nav__link--submenu + .nav__submenu {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav__link--opened + .nav__submenu {
+    display: grid;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media (min-width: $width-notebook) {
+  .nav__link[href] {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+  }
+
+  .nav__link[href]:hover,
+  .nav__link--submenu:not(.nav__link--opened):hover {
+    opacity: 0.5;
   }
 }

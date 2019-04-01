@@ -40,6 +40,30 @@
     display: block;
     margin-top: 24px;
     color: var(--color-light);
+    transition-duration: 0.3s;
+    transition-property: opacity;
+
+    &::before {
+      transition-duration: 0.3s;
+      transition-property: opacity;
+    }
+  }
+
+  .contacts__mail:hover {
+    opacity: 0.5;
+
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  .contacts__mail + .contacts__icon {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+  }
+
+  .contacts__mail:hover + .contacts__icon {
+    opacity: 0.5;
   }
 
   .contacts__phones {
@@ -63,15 +87,33 @@
     line-height: 18px;
     color: var(--color-light);
     text-transform: lowercase;
+    transition-duration: 0.3s;
+    transition-property: opacity;
     opacity: 0.5;
+  }
+
+  .contacts__more:hover {
+    opacity: 1;
   }
 
   .contacts__arrow {
     margin-left: 5px;
+    transition-duration: 0.3s;
+    transition-property: margin-left;
+  }
+
+  .contacts__more:hover .contacts__arrow {
+    margin-left: 20px;
   }
 
   .contacts__arrow use {
     fill: var(--color-light);
     opacity: 0.5;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+  }
+
+  .contacts__more:hover .contacts__arrow use {
+    opacity: 1;
   }
 }
