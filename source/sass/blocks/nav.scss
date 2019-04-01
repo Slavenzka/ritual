@@ -119,7 +119,8 @@
 }
 
 @media (min-width: $width-notebook) {
-  .nav__link[href] {
+  .nav__link[href],
+  .nav__link--submenu {
     transition-duration: 0.3s;
     transition-property: opacity;
   }
