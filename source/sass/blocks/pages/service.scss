@@ -1,0 +1,101 @@
+.service__img {
+  margin-top: 20px;
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+}
+
+.service__heading {
+  margin: 0;
+  margin-top: 30px;
+  font-family: var(--font-headings);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-dark);
+}
+
+.service__descriptor {
+  margin: 0;
+  margin-top: 20px;
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--color-dark);
+}
+
+.service__features {
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.service__feature {
+  position: relative;
+  padding-left: 35px;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  color: var(--color-dark);
+  letter-spacing: 1.05px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 15px;
+    height: 20px;
+    background-image: url("../img/pages/pin-icon.svg");
+    background-size: cover;
+  }
+}
+
+.service__feature:not(:first-of-type) {
+  margin-top: 26px;
+}
+
+.service__btn {
+  display: none;
+}
+
+@media (min-width: $width-notebook) {
+  .service {
+    padding-right: 1.6%;
+    margin-top: 20px;
+  }
+
+  .service > .container {
+    display: grid;
+    grid-template-columns: 450px auto;
+    grid-column-gap: 100% * 68 / 1130;
+  }
+
+  .service__img {
+    grid-row: 1 / 5;
+    margin: 0;
+    height: 550px;
+  }
+
+  .service__heading {
+    margin-top: 23px;
+  }
+
+  .service__descriptor {
+    grid-column: 2 / 3;
+    margin-top: 30px;
+  }
+
+  .service__features {
+    margin-top: 52px;
+  }
+
+  .service__btn {
+    grid-column: 2 / 3;
+    display: block;
+    margin-top: 52px;
+  }
+}
