@@ -2094,9 +2094,13 @@ a {
   .service > .container {
     display: grid;
     grid-template-columns: 450px auto;
-    grid-column-gap: 6.0177%; }
+    grid-template-rows: repeat(10, auto);
+    grid-column-gap: 6.0177%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
   .service__img {
-    grid-row: 1 / 5;
+    grid-row: 1 / -1;
     margin: 0;
     height: 550px; }
   .service__heading {
@@ -2105,6 +2109,7 @@ a {
     grid-column: 2 / 3;
     margin-top: 30px; }
   .service__features {
+    grid-column: 2 / 3;
     margin-top: 52px; }
   .service__controls {
     grid-column: 2 / 3;
@@ -2114,9 +2119,10 @@ a {
     margin-top: 50px; }
   .service__btn {
     grid-column: 2 / 3;
-    grid-row: 5 / 6;
     display: inline-block;
     margin: 0; }
+  .service:not(.service--funeral) .service__btn {
+    margin-top: 50px; }
   .service__calc {
     margin: 0;
     margin-left: 131px; } }
