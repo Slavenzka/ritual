@@ -785,12 +785,12 @@ a {
 
 .modal--callback .modal__content {
   margin-top: calc(50vh - 200px);
-  max-height: 400px; }
+  height: 400px; }
 
 .modal--message .modal__content {
   margin-top: calc(50vh - 284px);
   padding: 30px 15px;
-  max-height: 568px; }
+  height: 568px; }
 
 .modal__img {
   display: none; }
