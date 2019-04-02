@@ -4,7 +4,7 @@
   left: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100vw;
   height: 150vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -24,11 +24,15 @@
 .modal__content {
   position: relative;
   padding: 40px 45px;
-  margin-top: -50vh;
   width: 340px;
   font-size: 0;
   background-color: var(--color-light);
   border-radius: 6px;
+}
+
+.modal--callback .modal__content {
+  margin-top: calc(50vh - 200px);
+  max-height: 400px;
 }
 
 .modal--message .modal__content {
