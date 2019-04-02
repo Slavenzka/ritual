@@ -21,6 +21,18 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: -10px;
+    width: 62px;
+    height: 76px;
+    background-image: url("../img/index/black.svg");
+    background-size: cover;
+    z-index: -1;
+  }
 }
 
 .banner__feature {
@@ -67,6 +79,13 @@
   .banner__heading,
   .banner__descriptor {
     max-width: 570px;
+  }
+
+  .banner__heading {
+    &::before {
+      top: -35px;
+      left: -10px;
+    }
   }
 
   .banner__descriptor:first-of-type {
