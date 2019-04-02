@@ -62,6 +62,10 @@
   display: none;
 }
 
+.service:not(.service--funeral) .service__calc {
+  display: none;
+}
+
 @media (min-width: $width-notebook) {
   .service {
     padding-right: 1.6%;
@@ -93,9 +97,21 @@
     margin-top: 52px;
   }
 
+  .service__controls {
+    grid-column: 2 / 3;
+    display: flex;
+    margin-top: 50px;
+  }
+
   .service__btn {
     grid-column: 2 / 3;
-    display: block;
-    margin-top: 52px;
+    grid-row: 5 / 6;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .service__calc {
+    margin: 0;
+    margin-left: 131px;
   }
 }
