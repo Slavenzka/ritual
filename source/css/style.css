@@ -2084,6 +2084,9 @@ a {
 .service__btn {
   display: none; }
 
+.service:not(.service--funeral) .service__calc {
+  display: none; }
+
 @media (min-width: 1260px) {
   .service {
     padding-right: 1.6%;
@@ -2103,7 +2106,17 @@ a {
     margin-top: 30px; }
   .service__features {
     margin-top: 52px; }
+  .service__controls {
+    grid-column: 2 / 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px; }
   .service__btn {
     grid-column: 2 / 3;
-    display: block;
-    margin-top: 52px; } }
+    grid-row: 5 / 6;
+    display: inline-block;
+    margin: 0; }
+  .service__calc {
+    margin: 0;
+    margin-left: 131px; } }
