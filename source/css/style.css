@@ -1936,11 +1936,11 @@ a {
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 281px);
-  grid-auto-rows: 200px;
+  grid-template-columns: repeat(auto-fill, 50%);
+  grid-auto-rows: 4%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  grid-gap: 50px 15px;
+  grid-gap: 10px;
   margin: 0;
   margin-top: 30px;
   padding: 0;
