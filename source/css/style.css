@@ -1937,6 +1937,7 @@ a {
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 281px);
+  grid-auto-rows: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   grid-gap: 50px 15px;
@@ -1946,11 +1947,14 @@ a {
   list-style: none; }
 
 .catalog__link {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: var(--color-dark); }
 
 .catalog__img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
 
@@ -1978,13 +1982,25 @@ a {
   .catalog {
     padding-top: 60px; }
   .catalog__list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    grid-auto-flow: dense; }
+  .catalog__item:nth-of-type(4n + 1) {
+    grid-row: span 2;
+    grid-column: span 2; } }
 
 @media (min-width: 1920px) {
-  .catalog__list {
-    grid-gap: 50px 25px; } }
+  .catalog__link {
+    overflow: hidden; }
+  .catalog__img {
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s; }
+  .catalog__link:hover .catalog__img {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); } }
 
 .advantages {
   margin-top: 50px; }
