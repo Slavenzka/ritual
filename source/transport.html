@@ -263,8 +263,8 @@
           <img class="header__img" src="img/logo.svg" alt="Логотип ритуального сервиса Memory">
         </picture>
       </a>
-      <a class="callback-trigger header__call">
-        Заказать звонок
+      <a class="phones-trigger header__call">
+        Свяжитесь с нами
         <svg class="header__icon" width="55" height="60" viewbox="0 0 83 90">
           <use xlink:href="#callback"></use>
         </svg>
@@ -459,7 +459,7 @@
           </li>
         </ul>
         <a class="btn banner__btn service__btn callback-trigger">
-          Свяжитесь с нами
+          Заказать звонок
         </a>
       </div>
     </section>
@@ -547,7 +547,7 @@
         </a>
       </address>
       <p class="footer__copyright">
-        © Ритуальный сервис “memory”, 2019
+        © Ритуальный сервис “Veles”, 2019
       </p>
     </div>
   </footer>
@@ -562,25 +562,17 @@
         Свяжитесь с нами
       </h2>
       <p class="modal__descriptor">
-        Воспользуйтесь одним из телефонных номеров ниже, чтобы связаться с нами:
+        Воспользуйтесь одним из телефонных номеров ниже, чтобы связаться с нами
       </p>
-      <ul class="modal__phones">
-        <li class="modal__phone">
-          <a href="tel:+38 073 49 07 474">
-            +38 073 49 07 474
-          </a>
-        </li>
-        <li class="modal__phone">
-          <a href="tel:+38 095 49 07 474">
-            +38 095 49 07 474
-          </a>
-        </li>
-        <li class="modal__phone">
-          <a href="tel:+38 098 49 07 474">
-            +38 098 49 07 474
-          </a>
-        </li>
-      </ul>
+      <form action="#" class="modal__form">
+        <p class="modal__hint">
+          На какой номер Вам перезвонить?
+        </p>
+        <input type="tel" class="modal__input" placeholder="+38 0XX XX XXX">
+        <button class="btn modal__btn" type="submit">
+          Заказать звонок
+        </button>
+      </form>
     </div>
   </div>
   <div class="modal modal--message">
@@ -612,6 +604,37 @@
           Отправить
         </button>
       </form>
+    </div>
+  </div>
+  <div class="modal modal--phones">
+    <div class="modal__content">
+      <img src="img/modal__img.jpg" alt="Фотография скульптуры" class="modal__img">
+      <button class="modal__close" type="button">
+        Закрыть модальное окно
+      </button>
+      <h2 class="modal__heading">
+        Свяжитесь с нами
+      </h2>
+      <p class="modal__descriptor">
+        Воспользуйтесь одним из телефонных номеров ниже, чтобы связаться с нами:
+      </p>
+      <ul class="modal__phones">
+        <li class="modal__phone">
+          <a href="tel:+38 073 49 07 474">
+            +38 073 49 07 474
+          </a>
+        </li>
+        <li class="modal__phone">
+          <a href="tel:+38 095 49 07 474">
+            +38 095 49 07 474
+          </a>
+        </li>
+        <li class="modal__phone">
+          <a href="tel:+38 098 49 07 474">
+            +38 098 49 07 474
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 
