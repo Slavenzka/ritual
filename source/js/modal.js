@@ -37,4 +37,7 @@
 
   let messageModal = new ToggleModal('.message-trigger', '.modal--message');
   messageModal.openModal();
+
+  let phonesModal = new ToggleModal('.phones-trigger', '.modal--phones');
+  phonesModal.openModal();
 })();
