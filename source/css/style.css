@@ -1917,7 +1917,7 @@ a {
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 50%);
+  grid-template-columns: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   grid-gap: 10px;

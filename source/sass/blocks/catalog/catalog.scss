@@ -20,7 +20,7 @@
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 50%);
+  grid-template-columns: 100%;
   justify-content: space-around;
   grid-gap: 10px;
   margin: 0;
