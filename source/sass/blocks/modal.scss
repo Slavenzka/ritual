@@ -112,6 +112,27 @@
   opacity: 0.5;
 }
 
+.modal__phones {
+  order: 1;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: auto;
+  grid-row-gap: 15px;
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 1.05px;
+  list-style: none;
+}
+
+.modal__phone a {
+  color: var(--color-dark);
+}
+
 .modal__input {
   margin-top: 15px;
   padding: 11px 20px;
@@ -200,7 +221,7 @@
   .modal__content {
     display: grid;
     grid-template-columns: 290px auto;
-    grid-auto-rows: auto;
+    grid-template-rows: auto;
     grid-column-gap: 40px;
     padding: 0;
     padding-right: 40px;
@@ -224,6 +245,10 @@
 
   .modal__heading {
     margin-top: 44px;
+  }
+
+  .modal__phones {
+    margin: 0;
   }
 
   .modal__btn {

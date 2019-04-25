@@ -63,6 +63,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  a {
+    display: block;
+    color: var(--color-dark);
+  }
 }
 
 .enquiries__location .enquiries__heading {
@@ -163,5 +168,9 @@
 
   .enquiries__item .enquiries__icon use {
     fill: var(--color-dark);
+  }
+
+  ul.enquiries__phones > li.enquiries__phone {
+    margin: 0;
   }
 }
